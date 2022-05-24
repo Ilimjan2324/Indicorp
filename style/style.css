@@ -10,6 +10,7 @@ html {
 }
 body {
     font-family: "Montserrat",sans-serif;
+    background: #FAFAFA;
 }
 a {
     color: inherit;
@@ -36,6 +37,9 @@ button {
 .d-flex {
     display: flex;
 }
+.flex-column {
+    flex-direction: column;
+}
 .justify-center {
     justify-content: center;
 }
@@ -53,6 +57,8 @@ button {
     height: 100%;
 }
 .section_title {
+    font-size: 40px;
+    line-height: 57px;
     letter-spacing: 0.2px;
     color: #252B42;
     text-transform: capitalize;
@@ -63,7 +69,6 @@ button {
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #737373;
-    text-align: center;
 }
 .rounded-btn {
     padding: 10px 46px;
@@ -135,11 +140,83 @@ button {
     color: #00A0C1;
 }
 .hero .row {
+    position: absolute;
+    width: 100%;
     gap: 30px;
+    bottom: -19px;
 }
 .hero_card {
     height: 210px;
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
     background: #FFFFFF;
+    padding: 35px 0 35px 40px;
+    transition: 0.6s;
+}
+.hero_card svg {
+    fill: #00A0C1;
+    transition: 0.6s;
+}
+.hero_sm_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 10px 0;
+    transition: 0.6s;
+}
+.hero_sm_desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    transition: 0.6s;
+}
+.hero_card:hover {
+    background: #00A0C1
+}
+.hero_card:hover svg {
+    fill: #FFFFFF;
+}
+.hero_card:hover .hero_sm_title, .hero_card:hover .hero_sm_desc {
+    color: #FFFFFF;
 }
 /*SECTION HERO*/
+/*SECTION STATISTICS*/
+.statistics {
+    height: 526px;
+    margin-top: 112px;
+    padding: 80px 0;
+}
+.statistics .section_title {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.statistics .section_desc {
+    width: 511px;
+    text-align: center;
+    margin: 10px 0 50px;
+}
+.statistics .row {
+    gap: 39.66666px;
+    width: 100%;
+}
+.statistics_card {
+    height: 209px;
+    padding: 30px 0;
+    background: #FFFFFF;
+}
+.statistics_card_title {
+    margin: 10px 0;
+}
+.statistics_card_suptitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+/*SECTION STATISTICS*/
