@@ -20,10 +20,16 @@ button {
     border: none;
     background: none;
 }
+input {
+    outline: none;
+}
 /*BASE CONF*/
 /*UNIQUE CONF*/
 .row {
     display: flex;
+}
+.col-2 {
+    width: 16.66666%;
 }
 .col-3 {
     width: 25%;
@@ -237,9 +243,9 @@ button {
     padding: 30px 0 0 29px;
 }
 .advice .section_title {
-     font-weight: 700;
-     text-align: center;
- }
+    font-weight: 700;
+    text-align: center;
+}
 .advice .section_desc {
     text-align: center;
     margin: 10px 0 45px;
@@ -252,12 +258,301 @@ button {
     color: #252B42;
 }
 .advice_card_info .section_desc {
-     text-align: left;
-     width: 100%;
-     margin: 15px 0 30px;
- }
+    text-align: left;
+    width: 100%;
+    margin: 15px 0 30px;
+}
 .advice_card_img {
     width: 230px;
     height: 138px;
 }
 /*SECTION ADVICE*/
+/*SECTION ABOUT*/
+.about {
+    padding: 100px 0;
+}
+.about_title {
+    width: 477px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: none;
+}
+.about_desc {
+    text-align: center;
+    margin: 15px auto 100px;
+    width: 511px;
+}
+.about_video {
+    width: 597px;
+    height: 442px;
+    background: url("../images/about.png") center/cover no-repeat;
+}
+.about_content {
+    gap: 120px;
+}
+.about_video-info {
+    padding-top: 20px;
+}
+.about_content .about_title {
+    width: 328px;
+    text-align: left;
+    margin: 0;
+}
+.about_video-desc {
+    width: 330px;
+    margin: 10px 0 50px;
+}
+.about-sm-title {
+    width: 277px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-transform: none;
+}
+.about-sm-card_info {
+    margin-left: 21px;
+}
+.about-sm-desc {
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 5px;
+}
+.about_video-info .about_sm-card:nth-child(3) {
+    margin-bottom: 30px;
+}
+/*SECTION ABOUT*/
+/*SECTION CLIENTS*/
+.clients {
+    padding-top: 50px;
+}
+.clients_bottom {
+    position: relative;
+    height: 77px;
+    background-color: #252B42;
+    margin-top: 137px;
+}
+.clients_icon {
+    position: absolute;
+    width: 986px;
+    height: 124px;
+    background-color: #16697A;
+    border-radius: 2px;
+    padding: 30px 50px;
+    z-index: 2;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.clients_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    width: 264px;
+}
+#email {
+    height: 58px;
+    width: 333px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+#email::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.clients_btn {
+    width: 117px;
+    height: 58px;
+    background: #FFA62B;
+    border: 1px solid #E6E6E6;
+    border-radius: 0 5px 5px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+/*SECTION CLIENTS*/
+/*SECTION CONTACT*/
+.contact {
+    padding: 80px 0 148px;
+    background: #F3F3F3;
+}
+.contact_title {
+    font-weight: 700;
+    text-align: center;
+}
+.contact_desc {
+    text-align: center;
+    margin: 10px 0 110px;
+}
+.contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 393px;
+}
+.contact_card {
+    padding: 50px 0;
+    background: #FFFFFF;
+    transition: 0.6s;
+}
+.contact_card svg {
+    fill: #00A0C1;
+    margin-bottom: 15px;
+    transition: 0.6s;
+}
+.contact_mail {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    transition: 0.6s;
+}
+.contact_card_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 15px 0;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+.contact_btn {
+    padding: 10px 20px;
+    border: 1px solid #FFA62B;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFA62B;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+.contact_card:hover {
+    background: #252B42;
+    padding: 80px 0;
+    height: 393px;
+}
+.contact_card:hover svg {
+    fill: #FFFFFF;
+}
+.contact_card:hover .contact_card_title {
+    color: #FFFFFF;
+}
+.contact_card:hover .contact_mail {
+    color: #FFFFFF;
+}
+.contact_card:hover .contact_btn {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+/*SECTION CONTACT*/
+/*FOOTER SECTION*/
+.footer_top {
+    height: 142px;
+    background: #FAFAFA;
+}
+.footer_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.footer_btn {
+    padding: 15px 40px;
+    background: #FFA62B;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+.footer_mid {
+    background: #16697A;
+    padding: 50px 0;
+}
+.footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+.footer_sm-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.footer_link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.footer_link:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer_list .d-flex {
+    gap: 10px;
+}
+.footer_list:nth-child(5) .d-flex:not(:nth-child(2)) {
+    margin-top: 12px;
+}
+.footer_bottom {
+    background: #FAFAFA;
+    height: 74px;
+}
+.footer_desc {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-transform: capitalize;
+}
+.fa-brands {
+    font-size: 24px;
+}
+.fa-brands:not(:last-child) {
+    margin-right: 20px;
+}
+.fa-facebook-square {
+    color: #335BF5;
+}
+.fa-instagram {
+    color: #E61F5A;
+}
+.fa-twitter {
+    color: #21A6DF;
+}
+.fa-youtube {
+    color: #E42F08;
+}
+/*FOOTER SECTION*/
