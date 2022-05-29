@@ -21,7 +21,7 @@ button {
     background: none;
 }
 input {
-
+    outline: none;
 }
 /*BASE CONF*/
 /*UNIQUE CONF*/
@@ -360,12 +360,18 @@ input {
     background: #F9F9F9;
     border: 1px solid #E6E6E6;
     border-radius: 5px 0 0 5px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+#email::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.2px;
     color: #737373;
-    padding-left: 20px;
 }
 .clients_btn {
     width: 117px;
@@ -394,7 +400,7 @@ input {
     text-align: center;
     margin: 10px 0 110px;
 }
-.grid {
+.contact_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 393px;
@@ -460,3 +466,93 @@ input {
     border: 1px solid #FFFFFF;
 }
 /*SECTION CONTACT*/
+/*FOOTER SECTION*/
+.footer_top {
+    height: 142px;
+    background: #FAFAFA;
+}
+.footer_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.footer_btn {
+    padding: 15px 40px;
+    background: #FFA62B;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+.footer_mid {
+    background: #16697A;
+    padding: 50px 0;
+}
+.footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+.footer_sm-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.footer_link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.footer_link:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer_list .d-flex {
+    gap: 10px;
+}
+.footer_list:nth-child(5) .d-flex:not(:nth-child(2)) {
+    margin-top: 12px;
+}
+.footer_bottom {
+    background: #FAFAFA;
+    height: 74px;
+}
+.footer_desc {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-transform: capitalize;
+}
+.fa-brands {
+    font-size: 24px;
+}
+.fa-brands:not(:last-child) {
+    margin-right: 20px;
+}
+.fa-facebook-square {
+    color: #335BF5;
+}
+.fa-instagram {
+    color: #E61F5A;
+}
+.fa-twitter {
+    color: #21A6DF;
+}
+.fa-youtube {
+    color: #E42F08;
+}
+/*FOOTER SECTION*/
