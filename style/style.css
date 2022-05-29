@@ -20,6 +20,9 @@ button {
     border: none;
     background: none;
 }
+input {
+
+}
 /*BASE CONF*/
 /*UNIQUE CONF*/
 .row {
@@ -240,9 +243,9 @@ button {
     padding: 30px 0 0 29px;
 }
 .advice .section_title {
-     font-weight: 700;
-     text-align: center;
- }
+    font-weight: 700;
+    text-align: center;
+}
 .advice .section_desc {
     text-align: center;
     margin: 10px 0 45px;
@@ -255,10 +258,10 @@ button {
     color: #252B42;
 }
 .advice_card_info .section_desc {
-     text-align: left;
-     width: 100%;
-     margin: 15px 0 30px;
- }
+    text-align: left;
+    width: 100%;
+    margin: 15px 0 30px;
+}
 .advice_card_img {
     width: 230px;
     height: 138px;
@@ -369,7 +372,7 @@ button {
     height: 58px;
     background: #FFA62B;
     border: 1px solid #E6E6E6;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0 5px 5px 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
@@ -378,3 +381,82 @@ button {
     color: #FFFFFF;
 }
 /*SECTION CLIENTS*/
+/*SECTION CONTACT*/
+.contact {
+    padding: 80px 0 148px;
+    background: #F3F3F3;
+}
+.contact_title {
+    font-weight: 700;
+    text-align: center;
+}
+.contact_desc {
+    text-align: center;
+    margin: 10px 0 110px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 393px;
+}
+.contact_card {
+    padding: 50px 0;
+    background: #FFFFFF;
+    transition: 0.6s;
+}
+.contact_card svg {
+    fill: #00A0C1;
+    margin-bottom: 15px;
+    transition: 0.6s;
+}
+.contact_mail {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    transition: 0.6s;
+}
+.contact_card_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 15px 0;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+.contact_btn {
+    padding: 10px 20px;
+    border: 1px solid #FFA62B;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFA62B;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+.contact_card:hover {
+    background: #252B42;
+    padding: 80px 0;
+    height: 393px;
+}
+.contact_card:hover svg {
+    fill: #FFFFFF;
+}
+.contact_card:hover .contact_card_title {
+    color: #FFFFFF;
+}
+.contact_card:hover .contact_mail {
+    color: #FFFFFF;
+}
+.contact_card:hover .contact_btn {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+/*SECTION CONTACT*/
