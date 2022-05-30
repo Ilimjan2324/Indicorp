@@ -111,6 +111,9 @@ input {
 .header_link:not(:last-child) {
     margin-right: 21px;
 }
+.header_link:hover {
+    color: #00A0C1;
+}
 /*SECTION HEADER*/
 /*SECTION HERO*/
 .hero {
@@ -518,6 +521,9 @@ input {
 }
 .footer_link:not(:last-child) {
     margin-bottom: 10px;
+}
+.footer_link:hover {
+    color: #00A0C1;
 }
 .footer_list .d-flex {
     gap: 10px;
