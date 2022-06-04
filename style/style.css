@@ -91,6 +91,7 @@ input {
     position: absolute;
     width: 100%;
     top: 36px;
+    z-index: 3;
 }
 .header_logo {
     font-weight: 700;
@@ -111,9 +112,13 @@ input {
 .header_link:not(:last-child) {
     margin-right: 21px;
 }
+.header_link:hover {
+    color: #00A0C1;
+}
 /*SECTION HEADER*/
 /*SECTION HERO*/
 .hero {
+    position: relative;
     height: 100vh;
     background: url("../images/hero.png") center/cover no-repeat;
     padding-top: 184px;
@@ -145,17 +150,18 @@ input {
     border: 1px solid #00A0C1;
     color: #00A0C1;
 }
-.hero .row {
+.hero_grid {
     position: absolute;
-    width: 100%;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
     bottom: -19px;
 }
 .hero_card {
     height: 210px;
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
     background: #FFFFFF;
-    padding: 35px 0 35px 40px;
+    padding: 35px 18px 35px 40px;
     transition: 0.6s;
 }
 .hero_card svg {
@@ -203,15 +209,27 @@ input {
 .statistics .section_desc {
     width: 511px;
     margin: 10px 0 50px;
+    text-align: center;
 }
-.statistics .row {
-    gap: 39.66666px;
+.section_grid {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
 }
 .statistics_card {
-    height: 209px;
     padding: 30px 0;
     background: #FFFFFF;
+    transition: 0.6s;
+}
+.statistics_card:hover {
+    background: #00A0C1;
+}
+.statistics_card svg {
+    fill: #00A0C1;
+}
+.statistics_card:hover svg {
+    fill: #FFFFFF;
 }
 .statistics_card_title {
     margin: 10px 0;
@@ -224,15 +242,17 @@ input {
     letter-spacing: 0.1px;
     color: #737373;
 }
+.statistics_card:hover .statistics_card_title {
+    color: #FFFFFF;
+}
+.statistics_card:hover .statistics_card_suptitle {
+    color: #FFFFFF;
+}
 /*SECTION STATISTICS*/
 /*SECTION ADVICE*/
 .advice {
     height: 699px;
     padding: 125px 0 80px;
-}
-.advice .row {
-    width: 100%;
-    gap: 40px;
 }
 .advice_card {
     width: 100%;
@@ -332,6 +352,12 @@ input {
     height: 77px;
     background-color: #252B42;
     margin-top: 137px;
+}
+.clients_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 76px;
+    padding: 0 25px;
 }
 .clients_icon {
     position: absolute;
@@ -519,6 +545,9 @@ input {
 .footer_link:not(:last-child) {
     margin-bottom: 10px;
 }
+.footer_link:hover {
+    color: #00A0C1;
+}
 .footer_list .d-flex {
     gap: 10px;
 }
@@ -540,7 +569,7 @@ input {
 .fa-brands {
     font-size: 24px;
 }
-.fa-brands:not(:last-child) {
+.footer_icon:not(:last-child) {
     margin-right: 20px;
 }
 .fa-facebook-square {
@@ -554,5 +583,8 @@ input {
 }
 .fa-youtube {
     color: #E42F08;
+}
+.footer_icon {
+    display: inline-block;
 }
 /*FOOTER SECTION*/

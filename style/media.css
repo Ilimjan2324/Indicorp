@@ -1,0 +1,97 @@
+@media (max-width: 991px) {
+    .container {
+        max-width: 951px;
+    }
+    .hero_sm_title {
+        font-size: 22px;
+    }
+    .advice .section_grid {
+        grid-column-gap: 10px;
+    }
+    .clients_icon {
+        width: 890px;
+        height: 120px;
+    }
+}
+@media (max-width: 779px) {
+    .container {
+        max-width: 778px;
+    }
+    .hero_title {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .hero_desc {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .hero_grid {
+        bottom: -45px;
+    }
+    .hero_card {
+        padding: 25px 18px 0px 25px;
+        max-width: 234px;
+
+    }
+    .hero_sm_title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .hero_sm_desc {
+        font-size: 12px;
+    }
+    .statistics {
+        height: 450px;
+    }
+    .statistics_card {
+        padding: 20px 0;
+        max-width: 150px;
+    }
+    .advice {
+        height: 990px;
+    }
+    .advice .section_grid {
+        padding: 140px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px;
+        margin-top: -120px;
+    }
+    .advice_card {
+        max-width: 230px;
+    }
+    .about_desc {
+        margin: 15px auto 55px;
+    }
+    .about_content {
+        gap: 35px
+    }
+    .clients_grid {
+        grid-column-gap: 25px;
+    }
+    .clients_icon {
+        width: 730px;
+        height: 115px;
+    }
+    .clients_title {
+        font-size: 18px;
+    }
+    #email {
+        height: 45px;
+        width: 225px;
+    }
+    .clients_btn {
+        height: 45px;
+    }
+    .contact {
+        padding: 80px 0;
+    }
+    .contact_desc {
+        margin: 10px 0 50px
+    }
+}
+
+/*778*/
+
+/*600*/
+
+/*428*/
